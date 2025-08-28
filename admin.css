@@ -41,6 +41,202 @@ body.dark {
 	--light: #0C0C1E;
 	--grey: #060714;
 	--dark: #FBFBFB;
+	background-color: #060714;
+}
+
+/* Styles pour le mode sombre */
+body.dark #sidebar {
+	background: #060714;
+}
+
+body.dark #content {
+	background: #060714;
+}
+
+body.dark #content nav {
+	background: #060714;
+}
+
+body.dark #content main {
+	background: #060714;
+	color: var(--dark);
+}
+
+body.dark .section {
+	background: #060714;
+	color: var(--dark);
+}
+
+body.dark .dashboard-section,
+body.dark .product-management,
+body.dark .employee-management,
+body.dark .sales-analysis {
+	background-color: #060714;
+	color: var(--dark);
+}
+
+body.dark .stats .stat-item {
+	background-color: #060714;
+	color: var(--dark);
+	border: 1px solid #1a1a1a;
+}
+
+body.dark .stats .stat-item h3,
+body.dark .stats .stat-item p {
+	color: var(--dark);
+}
+
+body.dark .charts .chart,
+body.dark .alerts,
+body.dark .table-reservations,
+body.dark .client-comments {
+	background-color: #060714;
+	color: var(--dark);
+	border: 1px solid #1a1a1a;
+}
+
+body.dark .chart h3 {
+	color: var(--dark);
+}
+
+body.dark table {
+	background-color: #060714;
+}
+
+body.dark table th {
+	background-color: #060714;
+	color: var(--dark);
+	border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark table td {
+	color: var(--dark);
+	border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark table tr:nth-child(even) {
+	background-color: #060714;
+}
+
+body.dark .top-bar {
+	background-color: #060714;
+}
+
+body.dark .search-bar {
+	background-color: #060714;
+	border-color: #1a1a1a;
+	color: var(--dark);
+}
+
+body.dark .search-bar:focus {
+	border-color: var(--primary);
+}
+
+body.dark .search-bar::placeholder {
+	color: #888;
+}
+
+body.dark .product-item,
+body.dark .client-item {
+	color: var(--dark);
+}
+
+body.dark #sidebar .side-menu li a {
+	color: #b3b3b3;
+}
+
+body.dark #sidebar .side-menu li.active a,
+body.dark #sidebar .side-menu li a:hover {
+	color: var(--primary);
+}
+
+body.dark #sidebar .brand span {
+	color: var(--dark);
+}
+
+/* Styles supplémentaires pour les sections en mode sombre */
+body.dark h2 {
+	color: var(--dark);
+}
+
+body.dark h3 {
+	color: var(--dark);
+}
+
+body.dark p {
+	color: var(--dark);
+}
+
+body.dark .add-product-btn,
+body.dark .edit-btn,
+body.dark .delete-btn {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .edit-btn {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+
+body.dark .delete-btn {
+	background-color: #dc3545;
+	border-color: #dc3545;
+}
+
+body.dark .btn-reply {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+}
+
+body.dark .status.critical {
+	background-color: #FF4E50;
+	color: white;
+}
+
+body.dark .status.low {
+	background-color: #FF9B3D;
+	color: white;
+}
+
+body.dark .status.normal {
+	background-color: #4CAF50;
+	color: white;
+}
+
+body.dark .status.reserved {
+	background-color: #FF6347;
+	color: white;
+}
+
+body.dark .status.available {
+	background-color: #32CD32;
+	color: white;
+}
+
+body.dark .status.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+body.dark .status.inactive {
+	background-color: #6c757d;
+	color: white;
+}
+
+body.dark .status.pending {
+	background-color: #ffc107;
+	color: black;
+}
+
+body.dark .status.delivered {
+	background-color: #28a745;
+	color: white;
+}
+
+body.dark .status.cancelled {
+	background-color: #dc3545;
+	color: white;
 }
 
 /* tableau */
@@ -1592,6 +1788,287 @@ table th {
     
     .sales-analysis .chart-container canvas {
         max-height: 250px;
+    }
+}
+
+/* Styles pour la section Paramètres */
+.settings-management {
+    padding: 20px;
+}
+
+.settings-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary);
+}
+
+.settings-card h3 {
+    color: var(--dark);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-card h3 i {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+.settings-form .form-input,
+.settings-form .form-textarea,
+.settings-form .time-input {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: var(--poppins);
+}
+
+.settings-form .form-input:focus,
+.settings-form .form-textarea:focus,
+.settings-form .time-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(254, 161, 22, 0.1);
+}
+
+.settings-form .form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.save-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background-color: #e6900f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(254, 161, 22, 0.3);
+}
+
+/* Horaires d'ouverture */
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.day-hours {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.day-hours label {
+    min-width: 80px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.time-input {
+    width: 100px;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+.day-hours input[type="checkbox"] {
+    margin-left: auto;
+    transform: scale(1.2);
+    accent-color: var(--primary);
+}
+
+/* Switch pour les notifications */
+.notification-options,
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Options de maintenance */
+.maintenance-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.maintenance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.backup-date {
+    color: var(--dark-grey);
+    font-style: italic;
+}
+
+.backup-btn,
+.cleanup-btn,
+.export-btn {
+    background-color: var(--dark);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.backup-btn:hover,
+.cleanup-btn:hover,
+.export-btn:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-1px);
+}
+
+/* Responsive pour la section paramètres */
+@media screen and (max-width: 768px) {
+    .settings-management {
+        padding: 10px;
+    }
+    
+    .settings-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .day-hours {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .day-hours label {
+        min-width: auto;
+    }
+    
+    .maintenance-item {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .time-input {
+        width: 80px;
+    }
+    
+    .hours-grid {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .settings-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .settings-form .form-input,
+    .settings-form .form-textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .save-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
